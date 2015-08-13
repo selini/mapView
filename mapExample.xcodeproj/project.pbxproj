@@ -15,6 +15,7 @@
 		054ACD141B7C73290063844E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054ACD131B7C73290063844E /* Images.xcassets */; };
 		054ACD171B7C73290063844E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 054ACD151B7C73290063844E /* LaunchScreen.xib */; };
 		054ACD231B7C73290063844E /* mapExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 054ACD221B7C73290063844E /* mapExampleTests.m */; };
+		054ACD2D1B7C74B40063844E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054ACD2C1B7C74B40063844E /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		054ACD1C1B7C73290063844E /* mapExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		054ACD211B7C73290063844E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		054ACD221B7C73290063844E /* mapExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mapExampleTests.m; sourceTree = "<group>"; };
+		054ACD2C1B7C74B40063844E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054ACD2D1B7C74B40063844E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +68,7 @@
 		054ACCF71B7C73290063844E = {
 			isa = PBXGroup;
 			children = (
+				054ACD2C1B7C74B40063844E /* MapKit.framework */,
 				054ACD021B7C73290063844E /* mapExample */,
 				054ACD1F1B7C73290063844E /* mapExampleTests */,
 				054ACD011B7C73290063844E /* Products */,
@@ -356,6 +360,7 @@
 				INFOPLIST_FILE = mapExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -366,6 +371,7 @@
 				INFOPLIST_FILE = mapExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
